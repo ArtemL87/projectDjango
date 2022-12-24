@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>{{ flatpage.title }}</title>
-</head>
-<body>
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
     <h2>{{ flatpage.title }}</h2>
     <hr>
-    <h3>Имена:</h3>
+    <h3>Наши люди:</h3>
     {{ flatpage.content }}
-    {{ flatpage.content }}
-</body>
-</html>
+    <hr>
+{% endblock content %}
